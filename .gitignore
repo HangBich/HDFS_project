@@ -1,11 +1,5 @@
-code/data/
-code/.venv/
-code/logs/
-code/**/__pycache__/
-code/results_old_*/
-code/data/
-code/.venv/
-code/logs/
-code/**/__pycache__/
-code/results_old_*/
-__MACOSX/
+.venv/
+data/
+logs/
+__pycache__/
+results_old_*/
