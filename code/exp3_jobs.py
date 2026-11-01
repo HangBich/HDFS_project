@@ -1,3 +1,5 @@
+import os
+ROOT = os.path.dirname(os.path.abspath(__file__))
 """Thí nghiệm 3 (phần job): chạy WordCount trên 5 cách bố trí tệp, dùng lại cụm và dữ liệu
 mà exp23_smallfiles.py đã nạp (cụm mini-HDFS cổng 8021, bucket-e23).
 Tiến trình điều khiển được giữ gọn nhẹ để chi phí fork mỗi task không bị phình theo RAM."""
@@ -8,13 +10,13 @@ import os
 import sys
 import time
 
-sys.path.insert(0, "/home/claude/sim")
-sys.path.insert(0, "/home/claude/sim/minihdfs")
+sys.path.insert(0, ROOT)
+sys.path.insert(0, os.path.join(ROOT, "minihdfs"))
 import exp23_smallfiles as e                    # noqa: E402
 from fsadapter import HdfsFS, ObjFS             # noqa: E402
 from objstore import purge_trash                # noqa: E402
 
-OUT = "/home/claude/sim/results"
+OUT = os.path.join(ROOT, "results")
 RUNS = 3
 
 
@@ -82,4 +84,4 @@ if __name__ == "__main__":
     try:
         main()
     finally:
-        os.system("/home/claude/sim/killcluster.sh")
+        os.system(os.path.join(ROOT, "killcluster.sh"))

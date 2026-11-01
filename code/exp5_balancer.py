@@ -1,3 +1,5 @@
+import os
+ROOT = os.path.dirname(os.path.abspath(__file__))
 """Thí nghiệm 5: mở rộng cụm 2 -> 3 worker, đo độ lệch dữ liệu, chạy Balancer, đo lại.
 
 Mỗi DataNode được giới hạn băng thông đĩa (mô phỏng mỗi worker có đĩa riêng), nên thời gian
@@ -13,7 +15,7 @@ import time
 
 import numpy as np
 
-sys.path.insert(0, "/home/claude/sim/minihdfs")
+sys.path.insert(0, os.path.join(ROOT, "minihdfs"))
 from balancer import balance, report   # noqa: E402
 from cluster import Cluster            # noqa: E402
 from client import HdfsClient          # noqa: E402
@@ -22,7 +24,7 @@ RUNS = int(os.environ.get("E5_RUNS", 3))
 MBPS = float(os.environ.get("E5_MBPS", 60))
 CAP = int(os.environ.get("E5_CAP", 4 * 2**30))
 N_FILES, FSIZE = 16, int(os.environ.get("E5_FSIZE", 128 * 2**20))   # 2 GiB dữ liệu, nhân bản 2
-OUT = "/home/claude/sim/results"
+OUT = os.path.join(ROOT, "results")
 
 
 def scan_job(port, workers, files):
@@ -121,4 +123,4 @@ if __name__ == "__main__":
     try:
         main()
     finally:
-        os.system("/home/claude/sim/killcluster.sh")
+        os.system(os.path.join(ROOT, "killcluster.sh"))

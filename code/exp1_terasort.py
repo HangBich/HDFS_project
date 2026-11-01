@@ -15,11 +15,12 @@ from multiprocessing import get_context
 
 import numpy as np
 
-sys.path.insert(0, "/home/claude/sim/minihdfs")
+BASE = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, os.path.join(BASE, "minihdfs"))
 from cluster import Cluster          # noqa: E402
 from fsadapter import make_fs        # noqa: E402
 
-LOCAL = "/home/claude/sim/data/local"
+LOCAL = os.path.join(BASE, "data", "local")
 WORKERS = ["w1", "w2", "w3"]
 REC = 100
 N_MAPS = 8
@@ -230,7 +231,7 @@ def run_once(pool, spec, base, run_id):
 
 def main():
     runs = int(sys.argv[1]) if len(sys.argv) > 1 else 3
-    outdir = "/home/claude/sim/results"
+    outdir = os.path.join(BASE, "results")
     os.makedirs(outdir, exist_ok=True)
     c = Cluster("e1", nn_port=8020)
     # topology: w1, w2 ở rack1; w3 ở rack2. Đĩa mỗi worker giới hạn 240 MiB/s (pd-standard 2000 GB)
@@ -274,4 +275,4 @@ if __name__ == "__main__":
     try:
         main()
     finally:
-        os.system("/home/claude/sim/killcluster.sh")
+        os.system(f"sh {os.path.join(BASE, 'killcluster.sh')}")

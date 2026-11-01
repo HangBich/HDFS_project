@@ -36,54 +36,6 @@
    "GET": 0
   },
   "terasort_map": {
-   "GET": 8,
-   "POST": 0,
-   "PUT": 0,
-   "LIST": 0,
-   "COPY": 0,
-   "DELETE": 0
-  },
-  "terasort_reduce": {
-   "POST": 6,
-   "PUT": 66,
-   "LIST": 3,
-   "COPY": 3,
-   "DELETE": 3,
-   "GET": 0
-  },
-  "terasort_commit": {
-   "LIST": 7,
-   "COPY": 3,
-   "DELETE": 4,
-   "PUT": 1,
-   "GET": 0
-  },
-  "teravalidate": {
-   "POST": 0,
-   "PUT": 0,
-   "LIST": 0,
-   "COPY": 0,
-   "DELETE": 0,
-   "GET": 3
-  }
- },
- "gs_cloud_0": {
-  "teragen": {
-   "POST": 16,
-   "PUT": 64,
-   "LIST": 8,
-   "COPY": 8,
-   "DELETE": 8,
-   "GET": 0
-  },
-  "teragen_commit": {
-   "LIST": 17,
-   "COPY": 8,
-   "DELETE": 9,
-   "PUT": 1,
-   "GET": 0
-  },
-  "terasort_map": {
    "POST": 0,
    "PUT": 0,
    "LIST": 0,
@@ -115,27 +67,7 @@
    "GET": 3
   }
  },
- "hdfs_1": {
-  "teragen": {
-   "RPC": 32
-  },
-  "teragen_commit": {
-   "RPC": 19
-  },
-  "terasort_map": {
-   "RPC": 8
-  },
-  "terasort_reduce": {
-   "RPC": 18
-  },
-  "terasort_commit": {
-   "RPC": 9
-  },
-  "teravalidate": {
-   "RPC": 3
-  }
- },
- "gs_local_1": {
+ "gs_cloud_0": {
   "teragen": {
    "GET": 0,
    "POST": 16,
@@ -160,12 +92,80 @@
    "DELETE": 0
   },
   "terasort_reduce": {
-   "GET": 0,
    "POST": 6,
    "PUT": 66,
    "LIST": 3,
    "COPY": 3,
-   "DELETE": 3
+   "DELETE": 3,
+   "GET": 0
+  },
+  "terasort_commit": {
+   "LIST": 7,
+   "COPY": 3,
+   "DELETE": 4,
+   "PUT": 1,
+   "GET": 0
+  },
+  "teravalidate": {
+   "GET": 3,
+   "POST": 0,
+   "PUT": 0,
+   "LIST": 0,
+   "COPY": 0,
+   "DELETE": 0
+  }
+ },
+ "hdfs_1": {
+  "teragen": {
+   "RPC": 32
+  },
+  "teragen_commit": {
+   "RPC": 19
+  },
+  "terasort_map": {
+   "RPC": 8
+  },
+  "terasort_reduce": {
+   "RPC": 18
+  },
+  "terasort_commit": {
+   "RPC": 9
+  },
+  "teravalidate": {
+   "RPC": 3
+  }
+ },
+ "gs_local_1": {
+  "teragen": {
+   "POST": 16,
+   "PUT": 64,
+   "LIST": 8,
+   "COPY": 8,
+   "DELETE": 8,
+   "GET": 0
+  },
+  "teragen_commit": {
+   "LIST": 17,
+   "COPY": 8,
+   "DELETE": 9,
+   "PUT": 1,
+   "GET": 0
+  },
+  "terasort_map": {
+   "POST": 0,
+   "PUT": 0,
+   "LIST": 0,
+   "COPY": 0,
+   "DELETE": 0,
+   "GET": 8
+  },
+  "terasort_reduce": {
+   "POST": 6,
+   "PUT": 66,
+   "LIST": 3,
+   "COPY": 3,
+   "DELETE": 3,
+   "GET": 0
   },
   "terasort_commit": {
    "LIST": 7,
@@ -208,12 +208,12 @@
    "GET": 8
   },
   "terasort_reduce": {
+   "GET": 0,
    "POST": 6,
    "PUT": 66,
    "LIST": 3,
    "COPY": 3,
-   "DELETE": 3,
-   "GET": 0
+   "DELETE": 3
   },
   "terasort_commit": {
    "LIST": 7,
@@ -291,12 +291,12 @@
    "GET": 0
   },
   "teravalidate": {
-   "GET": 3,
    "POST": 0,
    "PUT": 0,
    "LIST": 0,
    "COPY": 0,
-   "DELETE": 0
+   "DELETE": 0,
+   "GET": 3
   }
  },
  "gs_cloud_2": {
@@ -316,20 +316,20 @@
    "GET": 0
   },
   "terasort_map": {
+   "GET": 8,
    "POST": 0,
    "PUT": 0,
    "LIST": 0,
    "COPY": 0,
-   "DELETE": 0,
-   "GET": 8
+   "DELETE": 0
   },
   "terasort_reduce": {
+   "GET": 0,
    "POST": 6,
    "PUT": 66,
    "LIST": 3,
    "COPY": 3,
-   "DELETE": 3,
-   "GET": 0
+   "DELETE": 3
   },
   "terasort_commit": {
    "LIST": 7,

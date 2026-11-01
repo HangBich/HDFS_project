@@ -1,6 +1,8 @@
 {
- "ingest_hdfs": 73.13516020774841,
- "ingest_gs_cloud": 109.06243538856506,
+ "ingest_hdfs": 53.666383504867554,
+ "ingest_gs_cloud": 88.23684072494507,
+ "build_har": 18.869016647338867,
+ "build_merged": 24.950533151626587,
  "objects": {
   "hdfs_loose": {
    "files": 10000,
@@ -34,8 +36,5 @@
    "namespace": 1215,
    "blockmap": 5184
   }
- },
- "build_har": 38.319483518600464,
- "build_merged": 8.674179553985596,
- "build_merged_write_only": 9.16316533088684
+ }
 }

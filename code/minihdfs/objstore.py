@@ -1,3 +1,5 @@
+import os
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 """Kho đối tượng mô phỏng Google Cloud Storage: MinIO thật (giao thức S3) + chèn độ trễ
 theo mô hình của Durner và cộng sự (PVLDB 2023): t(s) = L0 + s * d.
 
@@ -15,7 +17,7 @@ from botocore.config import Config
 
 MiB = 1024 * 1024
 _SESSION = boto3.session.Session()     # dùng chung để tiến trình con tạo client nhanh (đã nạp sẵn mô tả API)
-TRASH = "/home/claude/sim/data/minio/.minio.sys/tmp/.trash"
+TRASH = os.path.join(ROOT, "data/minio/.minio.sys/tmp/.trash")
 
 
 def purge_trash():

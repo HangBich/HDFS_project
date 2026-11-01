@@ -1,10 +1,12 @@
+import os
+ROOT = os.path.dirname(os.path.abspath(__file__))
 """Tổng hợp kết quả: trung vị 3 lần đo cho từng thí nghiệm."""
 import csv
 import json
 import os
 import statistics as st
 
-R = "/home/claude/sim/results"
+R = os.path.join(ROOT, "results")
 
 
 def med(xs):

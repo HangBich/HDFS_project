@@ -1,0 +1,10 @@
+code/data/
+code/.venv/
+code/logs/
+code/**/__pycache__/
+code/results_old_*/
+code/data/
+code/.venv/
+code/logs/
+code/**/__pycache__/
+code/results_old_*/

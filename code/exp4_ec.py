@@ -1,3 +1,5 @@
+import os
+ROOT = os.path.dirname(os.path.abspath(__file__))
 """Thí nghiệm 4: nhân bản 2, nhân bản 3, erasure coding XOR-2-1 trên 3 DataNode.
 
 Đo: thời gian ghi, dung lượng thật trên đĩa các DataNode, thời gian đọc bình thường,
@@ -13,14 +15,14 @@ import time
 
 import numpy as np
 
-sys.path.insert(0, "/home/claude/sim/minihdfs")
+sys.path.insert(0, os.path.join(ROOT, "minihdfs"))
 from cluster import Cluster            # noqa: E402
 from client import HdfsClient, dn_stats  # noqa: E402
 
 RUNS = int(os.environ.get("E4_RUNS", 3))
 MBPS = float(os.environ.get("E4_MBPS", 100))
 N_FILES, FSIZE = 4, int(os.environ.get("E4_FSIZE", 256 * 2**20))
-OUT = "/home/claude/sim/results"
+OUT = os.path.join(ROOT, "results")
 CONFIGS = [("repl2", 2, None), ("repl3", 3, None), ("ec_xor21", 1, "XOR-2-1")]
 
 
@@ -88,7 +90,7 @@ def main():
         for cfg in CONFIGS:
             out = subprocess.run([sys.executable, __file__, "--one", cfg[0], str(run)],
                                  capture_output=True, text=True)
-            os.system("/home/claude/sim/killcluster.sh")
+            os.system(os.path.join(ROOT, "killcluster.sh"))
             line = [l for l in out.stdout.splitlines() if l.startswith("{")]
             if out.returncode != 0 or not line:
                 raise RuntimeError(f"lỗi ở {cfg[0]} lần {run}: {out.stderr[-2000:]}")
@@ -115,4 +117,4 @@ if __name__ == "__main__":
         try:
             main()
         finally:
-            os.system("/home/claude/sim/killcluster.sh")
+            os.system(os.path.join(ROOT, "killcluster.sh"))

@@ -1,3 +1,5 @@
+import os
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 """Khởi động / dừng cụm mini-HDFS (1 NameNode + nhiều DataNode, mỗi node một tiến trình)."""
 import os
 import shutil
@@ -9,7 +11,7 @@ import time
 from common import RpcClient
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-BASE = "/home/claude/sim/data/hdfs"
+BASE = os.path.join(ROOT, "data/hdfs")
 ENV = dict(os.environ, LD_PRELOAD="/usr/lib/x86_64-linux-gnu/libjemalloc.so.2",
            MALLOC_CONF="dirty_decay_ms:5000,muzzy_decay_ms:5000")   # node chạy lâu: trả lại RAM sau 5 s
 

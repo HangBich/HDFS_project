@@ -1,3 +1,5 @@
+import os
+ROOT = os.path.dirname(os.path.abspath(__file__))
 """Thí nghiệm 2 (đổi tên, liệt kê thư mục 10.000 tệp) và thí nghiệm 3 (tệp nhỏ).
 
 Dữ liệu: 10.000 tệp văn bản x 100 KB (mô phỏng chứng từ, log), tổng khoảng 1 GB.
@@ -18,7 +20,7 @@ from multiprocessing import get_context
 
 import numpy as np
 
-sys.path.insert(0, "/home/claude/sim/minihdfs")
+sys.path.insert(0, os.path.join(ROOT, "minihdfs"))
 import fsadapter                                # noqa: E402
 from cluster import Cluster                     # noqa: E402
 from fsadapter import HdfsFS, ObjFS, make_fs    # noqa: E402
@@ -27,7 +29,7 @@ from objstore import ObjStore, purge_trash      # noqa: E402
 N_FILES = int(os.environ.get("E3_N", 10_000))
 FILE_SIZE = 100 * 1024
 RUNS = int(os.environ.get("E3_RUNS", 3))
-OUT = "/home/claude/sim/results"
+OUT = os.path.join(ROOT, "results")
 WORKERS = ["w1", "w2", "w3"]
 BLOCK = 128 * 1024 * 1024
 HDFS = {"type": "hdfs", "port": 8021, "repl": 3}
@@ -274,4 +276,4 @@ if __name__ == "__main__":
         keep = main()
     finally:
         if keep != "keep":
-            os.system("/home/claude/sim/killcluster.sh")
+            os.system(os.path.join(ROOT, "killcluster.sh"))

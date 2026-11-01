@@ -1,73 +1,73 @@
 {
  "repl2": {
-  "write_s": 15.576032638549805,
+  "write_s": 12.672654390335083,
   "raw_bytes": 2147483648.0,
   "overhead": 2.0,
-  "read_s": 17.261529207229614,
-  "degraded_s": 16.864867210388184,
-  "recover_s": 10.72395396232605,
+  "read_s": 14.212367057800293,
+  "degraded_s": 14.212180376052856,
+  "recover_s": 10.535863161087036,
   "lost_bytes": 1073741824.0,
   "recover_read_bytes": 1073741824.0,
   "failover": 4.0,
   "degraded_groups": 0.0,
   "ok": true,
   "runs_degraded": [
-   16.96,
-   16.52,
-   16.86
+   14.21,
+   14.58,
+   14.21
   ],
   "runs_read": [
-   17.26,
-   17.07,
-   17.94
+   14.21,
+   14.3,
+   14.14
   ],
   "amplification": 1.0
  },
  "repl3": {
-  "write_s": 17.816039562225342,
+  "write_s": 12.73056411743164,
   "raw_bytes": 3221225472.0,
   "overhead": 3.0,
-  "read_s": 17.312294483184814,
-  "degraded_s": 16.6970374584198,
-  "recover_s": 10.939980030059814,
+  "read_s": 14.218640089035034,
+  "degraded_s": 14.17134141921997,
+  "recover_s": 10.533377647399902,
   "lost_bytes": 1073741824.0,
   "recover_read_bytes": 1073741824.0,
-  "failover": 2.0,
+  "failover": 3.0,
   "degraded_groups": 0.0,
   "ok": true,
   "runs_degraded": [
-   17.36,
-   16.7,
-   16.56
+   14.15,
+   14.22,
+   14.17
   ],
   "runs_read": [
-   17.08,
-   17.31,
-   17.41
+   14.34,
+   14.22,
+   14.07
   ],
   "amplification": 1.0
  },
  "ec_xor21": {
-  "write_s": 12.26603889465332,
+  "write_s": 7.227975368499756,
   "raw_bytes": 1610612736.0,
   "overhead": 1.5,
-  "read_s": 13.66892123222351,
-  "degraded_s": 23.92232608795166,
-  "recover_s": 29.63624858856201,
+  "read_s": 8.774718761444092,
+  "degraded_s": 15.093526601791382,
+  "recover_s": 18.97587823867798,
   "lost_bytes": 536870912.0,
   "recover_read_bytes": 1073741824.0,
   "failover": 0.0,
   "degraded_groups": 4.0,
   "ok": true,
   "runs_degraded": [
-   24.35,
-   23.91,
-   23.92
+   15.13,
+   15.09,
+   15.02
   ],
   "runs_read": [
-   13.67,
-   12.87,
-   13.77
+   9.02,
+   8.77,
+   8.61
   ],
   "amplification": 2.0
  }
