@@ -14,7 +14,6 @@ Giảng viên hướng dẫn: TS. Tạ Duy Hoàng.
 
 ## Nội dung
 
-- `report/`: báo cáo LaTeX (Overleaf) gồm lý thuyết HDFS, ứng dụng và kết quả thực nghiệm.
 - `code/`: bộ mô phỏng HDFS và object store cùng năm thí nghiệm. Xem hướng dẫn chi tiết tại [`code/README.md`](code/README.md).
 
 ## Kết quả chính
