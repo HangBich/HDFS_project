@@ -2,13 +2,7 @@
 
 Đề tài IT4931 (Lưu trữ và xử lý dữ liệu lớn), Đại học Bách khoa Hà Nội.
 
-Nhóm thực hiện: 
-
-Nguyễn Thị Bích Hằng (20261098M)
-
-Lê Thị Hồng Nhung (20241136M)
-
-Vũ Tùng Dương (20261229M)
+Nhóm thực hiện: Lê Thị Hồng Nhung (20241136M), Nguyễn Thị Bích Hằng (20261098M), Vũ Tùng Dương (20261229M)
 
 Giảng viên hướng dẫn: TS. Tạ Duy Hoàng.
 
