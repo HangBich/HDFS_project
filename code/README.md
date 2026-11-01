@@ -17,7 +17,6 @@ code/
 │   └── common.py        Hàm dùng chung
 ├── exp1_terasort.py     TN1: TeraGen, TeraSort, TeraValidate (HDFS, gs_local, gs_cloud)
 ├── exp23_smallfiles.py  TN2: thao tác metadata; TN3: tệp nhỏ và WordCount
-├── exp3_jobs.py         Hỗ trợ TN3 (xem ghi chú bên dưới)
 ├── exp4_ec.py           TN4: nhân bản 2, 3 và EC XOR-2-1
 ├── exp5_balancer.py     TN5: mở rộng 2 -> 3 worker và balancer
 ├── analyze.py           Tổng hợp trung vị từ results/ thành sum_e*.json
@@ -125,4 +124,4 @@ Bảng đầy đủ và cách diễn giải nằm ở mục 3.7 của báo cáo.
 - Thí nghiệm đĩa mạng và SSD trong kế hoạch ban đầu không được thực hiện.
 - H6 (chi phí tiền) không được đo bằng mô phỏng.
 - EC đọc bình thường nhanh hơn nhân bản trong mô phỏng (8,8 s so với 14,2 s). Đây có thể là đặc điểm của mô phỏng khi đọc song song từ nhiều node, không nên coi là kết luận chung.
-- `exp3_jobs.py` là phần TN3 chạy riêng. Kết quả TN3 hiện đã được sinh bởi `exp23_smallfiles.py`, nên không cần chạy `exp3_jobs.py` để tái lập kết quả báo cáo.
+- TN3 chạy đầy đủ trong `exp23_smallfiles.py`. Thư mục `legacy/` chứa bản `exp3_jobs.py` cũ, không cần chạy để tái lập kết quả.
