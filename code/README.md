@@ -124,4 +124,3 @@ Bảng đầy đủ và cách diễn giải nằm ở mục 3.7 của báo cáo.
 - Thí nghiệm đĩa mạng và SSD trong kế hoạch ban đầu không được thực hiện.
 - H6 (chi phí tiền) không được đo bằng mô phỏng.
 - EC đọc bình thường nhanh hơn nhân bản trong mô phỏng (8,8 s so với 14,2 s). Đây có thể là đặc điểm của mô phỏng khi đọc song song từ nhiều node, không nên coi là kết luận chung.
-- TN3 chạy đầy đủ trong `exp23_smallfiles.py`. Thư mục `legacy/` chứa bản `exp3_jobs.py` cũ, không cần chạy để tái lập kết quả.
