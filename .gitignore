@@ -8,3 +8,4 @@ code/.venv/
 code/logs/
 code/**/__pycache__/
 code/results_old_*/
+__MACOSX/
