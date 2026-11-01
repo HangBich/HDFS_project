@@ -1,0 +1,41 @@
+{
+ "ingest_hdfs": 73.13516020774841,
+ "ingest_gs_cloud": 109.06243538856506,
+ "objects": {
+  "hdfs_loose": {
+   "files": 10000,
+   "dirs": 2,
+   "blocks": 10000,
+   "objects": 20002
+  },
+  "hdfs_har": {
+   "files": 3,
+   "dirs": 1,
+   "blocks": 10,
+   "objects": 14
+  },
+  "hdfs_merged": {
+   "files": 1,
+   "dirs": 1,
+   "blocks": 8,
+   "objects": 10
+  }
+ },
+ "memory": {
+  "hdfs_loose": {
+   "namespace": 5438802,
+   "blockmap": 6795195
+  },
+  "hdfs_har": {
+   "namespace": 2263,
+   "blockmap": 6526
+  },
+  "hdfs_merged": {
+   "namespace": 1215,
+   "blockmap": 5184
+  }
+ },
+ "build_har": 38.319483518600464,
+ "build_merged": 8.674179553985596,
+ "build_merged_write_only": 9.16316533088684
+}

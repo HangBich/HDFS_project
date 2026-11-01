@@ -1,0 +1,93 @@
+{
+ "hdfs_loose": {
+  "job_s": 203.77972388267517,
+  "runs": [
+   216.6,
+   203.2,
+   203.8
+  ],
+  "map_tasks": 10000,
+  "same": true
+ },
+ "hdfs_har": {
+  "job_s": 248.84448838233948,
+  "runs": [
+   246.9,
+   259.5,
+   248.8
+  ],
+  "map_tasks": 10000,
+  "same": true
+ },
+ "hdfs_merged": {
+  "job_s": 17.222049951553345,
+  "runs": [
+   14.9,
+   17.2,
+   18.4
+  ],
+  "map_tasks": 8,
+  "same": true
+ },
+ "gs_local": {
+  "job_s": 152.23445391654968,
+  "runs": [
+   151.7,
+   152.3,
+   152.2
+  ],
+  "map_tasks": 10000,
+  "same": true
+ },
+ "gs_cloud": {
+  "job_s": 197.39005041122437,
+  "runs": [
+   204.5,
+   195.6,
+   197.4
+  ],
+  "map_tasks": 10000,
+  "same": true
+ },
+ "log": {
+  "ingest_hdfs": 73.13516020774841,
+  "ingest_gs_cloud": 109.06243538856506,
+  "objects": {
+   "hdfs_loose": {
+    "files": 10000,
+    "dirs": 2,
+    "blocks": 10000,
+    "objects": 20002
+   },
+   "hdfs_har": {
+    "files": 3,
+    "dirs": 1,
+    "blocks": 10,
+    "objects": 14
+   },
+   "hdfs_merged": {
+    "files": 1,
+    "dirs": 1,
+    "blocks": 8,
+    "objects": 10
+   }
+  },
+  "memory": {
+   "hdfs_loose": {
+    "namespace": 5438802,
+    "blockmap": 6795195
+   },
+   "hdfs_har": {
+    "namespace": 2263,
+    "blockmap": 6526
+   },
+   "hdfs_merged": {
+    "namespace": 1215,
+    "blockmap": 5184
+   }
+  },
+  "build_har": 38.319483518600464,
+  "build_merged": 8.674179553985596,
+  "build_merged_write_only": 9.16316533088684
+ }
+}

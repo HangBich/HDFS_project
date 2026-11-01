@@ -1,0 +1,44 @@
+{
+ "hdfs": {
+  "teragen_tasks": 7.312508821487427,
+  "teragen_commit": 0.0018758773803710938,
+  "teragen": 7.314295291900635,
+  "terasort_sample": 0.0819239616394043,
+  "terasort_map": 7.317086219787598,
+  "terasort_reduce": 4.702813386917114,
+  "terasort_commit": 0.0009315013885498047,
+  "terasort": 12.10185694694519,
+  "teravalidate": 2.848484992980957,
+  "total": 22.264637231826782,
+  "valid": true,
+  "n": 3
+ },
+ "gs_local": {
+  "teragen_tasks": 9.321240186691284,
+  "teragen_commit": 3.7964937686920166,
+  "teragen": 13.150817155838013,
+  "terasort_sample": 0.03987908363342285,
+  "terasort_map": 5.6760313510894775,
+  "terasort_reduce": 6.564847230911255,
+  "terasort_commit": 3.211376190185547,
+  "terasort": 15.21027421951294,
+  "teravalidate": 1.1362974643707275,
+  "total": 29.49738883972168,
+  "valid": true,
+  "n": 3
+ },
+ "gs_cloud": {
+  "teragen_tasks": 12.497023820877075,
+  "teragen_commit": 4.598118543624878,
+  "teragen": 17.09514808654785,
+  "terasort_sample": 0.428142786026001,
+  "terasort_map": 11.944750547409058,
+  "terasort_reduce": 11.57120418548584,
+  "terasort_commit": 3.5659537315368652,
+  "terasort": 27.58755612373352,
+  "teravalidate": 7.23119592666626,
+  "total": 51.91390013694763,
+  "valid": true,
+  "n": 3
+ }
+}

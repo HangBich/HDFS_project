@@ -1,0 +1,100 @@
+{
+ "scan_2w_s": 21.584259748458862,
+ "scan_added_s": 20.71455693244934,
+ "scan_balanced_s": 16.029377698898315,
+ "bal_iterations": 1,
+ "bal_moved_bytes": 1476395008,
+ "bal_seconds": 26.56231665611267,
+ "snap": [
+  {
+   "label": "2 worker",
+   "util": {
+    "w1": 50.0,
+    "w2": 50.0
+   },
+   "stdev": 0.0,
+   "spread": 0.0,
+   "avg": 50.0
+  },
+  {
+   "label": "thêm w3",
+   "util": {
+    "w1": 50.0,
+    "w2": 50.0,
+    "w3": 0.0
+   },
+   "stdev": 23.57,
+   "spread": 50.0,
+   "avg": 33.33
+  },
+  {
+   "label": "sau balancer",
+   "util": {
+    "w1": 31.25,
+    "w2": 34.38,
+    "w3": 34.38
+   },
+   "stdev": 1.47,
+   "spread": 3.12,
+   "avg": 33.33
+  },
+  {
+   "label": "ghi thêm 512 MiB từ w1",
+   "util": {
+    "w1": 43.75,
+    "w2": 43.75,
+    "w3": 37.5
+   },
+   "stdev": 2.95,
+   "spread": 6.25,
+   "avg": 41.67
+  }
+ ],
+ "loc": [
+  [
+   {
+    "local": 11,
+    "remote": 5
+   },
+   {
+    "local": 11,
+    "remote": 5
+   },
+   {
+    "local": 11,
+    "remote": 5
+   }
+  ],
+  [
+   {
+    "local": 15,
+    "remote": 1
+   },
+   {
+    "local": 15,
+    "remote": 1
+   },
+   {
+    "local": 15,
+    "remote": 1
+   }
+  ]
+ ],
+ "runs": [
+  [
+   21.3,
+   20.7,
+   16.4
+  ],
+  [
+   21.6,
+   20.7,
+   16.0
+  ],
+  [
+   21.7,
+   20.5,
+   16.0
+  ]
+ ]
+}
